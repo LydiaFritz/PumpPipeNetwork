@@ -30,7 +30,8 @@ public class Driver {
 				c = new  Pipe(fin.nextDouble());
 		  
 			//add this component to the network
-			n.addComponent(c); 
+			n.addComponent(c);
+			
 			//see updated pressure on the network 
 			double pressure = n.getNetworkPressure();
 			System.out.printf("The current pressure on the network is %.3f\n", pressure);
