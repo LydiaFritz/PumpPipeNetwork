@@ -34,6 +34,13 @@ public class Network {
 	}
 	
 	public void addComponent(Component c) {
+		//output added to illustrate
+		//polymorphic variable c in action
+		if(c instanceof Pump)
+			System.out.println("adding pump: +" + c.getPressure() + " psi." );
+		else if(c instanceof Pipe)
+			System.out.println("adding pipe: " + c.getPressure() + " psi.");
+		
 		myNetwork.add(c);
 	}
 	
