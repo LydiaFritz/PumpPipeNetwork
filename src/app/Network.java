@@ -27,8 +27,12 @@ public class Network {
 	 */
 	public double getNetworkPressure() {
 		double totPressure = 0.0;
-		for(var v : myNetwork) {
-			totPressure += v.getPressure();
+		
+		//******************
+		//c is polymorphic
+		//******************
+		for(Component c : myNetwork) {
+			totPressure += c.getPressure();
 		}
 		return totPressure;
 	}
